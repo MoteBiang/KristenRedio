@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlNoticeItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gcm_list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/llMessageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:id="@+id/btnThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lbTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btnThumbnail"
+            android:text="Shadrach Jaungere"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/lbTimeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lbTitleText"
+            android:layout_below="@+id/lbFromText"
+            android:text="12 minutes ago"
+            android:textColor="@color/grey"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/lbFromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lbTitleText"
+            android:layout_below="@+id/lbTitleText"
+            android:text="KinaMax Micro Finance"
+            android:textColor="@color/grey"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnMore"
+            android:background="@null"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbFromText"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/ic_arrow_down"
+            android:text="100"
+            android:onClick="onMoreClick"
+            android:textColor="@android:color/transparent"
+            android:textSize="0sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMessageText"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMessageHeader"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/lbMessageText"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/app_name"
+            android:textColor="@color/grey" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llMessageURL"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/llMessageText"
+        android:gravity="center"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lbMessageURL"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:linksClickable="true"
+            android:textColorLink="@color/blue"
+            android:textColor="@color/blue"
+            android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llMessageImage"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/drop_shadow"
+        android:layout_below="@+id/llMessageURL"
+        android:layout_centerInParent="true"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgNoticeImage"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

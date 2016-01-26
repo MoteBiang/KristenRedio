@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:choiceMode="none"
+        android:dividerHeight="0px"
+        android:fastScrollEnabled="false"/>
+
+
+    <TextView
+        android:id="@+id/textViewSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_top"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="50dp"
+        android:text="@string/save_text"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"/>
+
+</LinearLayout>

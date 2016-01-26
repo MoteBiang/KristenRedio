@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/section"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#323232"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="2dip"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/row_bgr"
+                    android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/relativeLayout"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:singleLine="false"
+
+            android:text="1"
+            android:textColor="#F6FFFF"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

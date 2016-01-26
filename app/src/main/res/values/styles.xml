@@ -1,0 +1,69 @@
+<resources>
+
+    <style name="CyberaldTheme" parent="Base.CyberaldTheme"></style>
+
+    <style name="Base.CyberaldTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="Base.CyberaldTheme.ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:textColorSecondary">@color/primaryDark</item>
+        <item name="actionMenuTextColor">@color/accent</item>
+    </style>
+
+    <style name="MyAppDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Widget.MyApp.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:dropDownSelector">?attr/selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <style name="CollapsedTitleSpaceFix" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:layout_marginTop">23dp</item>
+    </style>
+
+    <!-- Transparent Activity Style -->
+    <style name="Theme.AppCompat.Translucent" parent="Base.CyberaldTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="CyberaldTheme.Detail" parent="CyberaldTheme"></style>
+
+    <!-- View Styles -->
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <string name="apply_for_loan_text">Apply Now</string>
+
+</resources>

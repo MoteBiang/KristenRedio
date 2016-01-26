@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <size
+        android:height="20dip"
+        android:width="20dip" />
+
+    <stroke
+        android:width="1dip"
+        android:color="@color/rounded_container_border" />
+
+    <gradient
+        android:angle="270"
+        android:endColor="@color/rounded_container_border"
+        android:startColor="@color/rounded_container_bg"
+        android:type="linear" />
+
+</shape>
